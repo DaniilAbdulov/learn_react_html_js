@@ -1,20 +1,9 @@
 import { Button, ButtonGroup, Card } from '@mui/material';
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import { lessons } from './consts';
 
 export const Home = () => {
-  const lessons = [
-    {
-      id: 1,
-      path: 'notificationapi',
-      title: 'Notification API'
-    },
-    {
-      id: 2,
-      path: 'clipboardapi',
-      title: 'Clipboard API'
-    }
-  ];
 
   return (
     <Card title="Выберите тему" className="content">
