@@ -5,12 +5,10 @@ import { ClipboardExample } from '../components/ClipboardAPI/ClipboardApiExample
 
 export const Router = () => {
   return (
-    <div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/notificationapi" element={<NotificationApiExample />} />
         <Route path="/clipboardapi" element={<ClipboardExample />} />
       </Routes>
-    </div>
   );
 };
