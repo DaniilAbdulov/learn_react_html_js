@@ -1,6 +1,10 @@
+import React, {useContext} from 'react';
 import {Button} from '../styledComponents/Button';
+import {MyContext} from '../../App';
 
 export const NotificationApiExample = () => {
+  const {backgroundColor} = useContext(MyContext);
+
   const getPermission = async () => {
     if (Notification.permission === 'granted') {
       return 'granted';
@@ -30,7 +34,7 @@ export const NotificationApiExample = () => {
   };
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', backgroundColor}}>
       {'Notification API'}
       <Button onClick={showNotify}>Show Notification</Button>
     </div>
